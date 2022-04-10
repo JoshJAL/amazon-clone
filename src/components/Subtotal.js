@@ -1,9 +1,11 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
+import { useNavigate } from "react-router-dom";
 import { getCartTotal } from "../reducer";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 import "./Subtotal.css";
 function Subtotal() {
+  const navigate = useNavigate();
   const [{ cart }] = useStateValue();
   return (
     <div className="subtotal">

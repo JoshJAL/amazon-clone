@@ -6,7 +6,7 @@ import Login from "./components/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Checkout from "./components/Checkout";
 import { auth } from "./firebase";
-import { useStateValue } from "./components/StateProvider";
+import { useStateValue } from "./StateProvider";
 
 function App() {
   const [{}, dispatch] = useStateValue();

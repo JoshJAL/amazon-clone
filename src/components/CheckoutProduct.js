@@ -1,9 +1,9 @@
 import React from "react";
 import "./CheckoutProduct.css";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating, alt }) {
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const removeFromCart = () => {
     // Remove the item from the Cart

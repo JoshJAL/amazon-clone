@@ -3,7 +3,7 @@ import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
 
 function Header() {
@@ -33,7 +33,7 @@ function Header() {
           <div onClick={handleAuthentication} className="header__option">
             {/* Hello, sign in */}
             <span className="header__optionLineOne">
-              {user ? `Hello, ${user?.email}` : "Hello, Guest"}
+              Hello, {user ? user?.email : "Guest"}
             </span>
             <span className="header__optionLineTwo">
               {user ? "Sign Out" : "Sign In"}

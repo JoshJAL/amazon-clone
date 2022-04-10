@@ -1,9 +1,9 @@
 import React from "react";
 import "./Product.css";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function Product({ id, title, image, price, rating, alt }) {
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
     // Dispatch the item into the dataLayer
