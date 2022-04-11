@@ -1,0 +1,203 @@
+[debug] [2022-04-11T05:02:34.710Z] ----------------------------------------------------------------------
+[debug] [2022-04-11T05:02:34.711Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\joshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-04-11T05:02:34.711Z] CLI Version:   10.6.0
+[debug] [2022-04-11T05:02:34.711Z] Platform:      win32
+[debug] [2022-04-11T05:02:34.711Z] Node Version:  v16.13.2
+[debug] [2022-04-11T05:02:34.712Z] Time:          Mon Apr 11 2022 01:02:34 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-04-11T05:02:34.712Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-11T05:02:34.762Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-11T05:02:34.762Z] > authorizing via signed-in user (joshua.levine33@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-04-11T05:02:34.784Z] [hub] writing locator at C:\Users\joshu\AppData\Local\Temp\hub-clone-ff644.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-04-11T05:02:34.795Z] defaultcredentials: writing to file C:\Users\joshu\AppData\Roaming\firebase\joshua_levine33_gmail.com_application_default_credentials.json
+[debug] [2022-04-11T05:02:34.796Z] Setting GAC to C:\Users\joshu\AppData\Roaming\firebase\joshua_levine33_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\joshu\\AppData\\Roaming\\firebase\\joshua_levine33_gmail.com_application_default_credentials.json"}}
+[debug] [2022-04-11T05:02:34.798Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-ff644/adminSdkConfig [none]
+[debug] [2022-04-11T05:02:35.064Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-ff644/adminSdkConfig 200
+[debug] [2022-04-11T05:02:35.064Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-ff644/adminSdkConfig {"projectId":"clone-ff644","storageBucket":"clone-ff644.appspot.com"}
+[debug] [2022-04-11T05:02:35.071Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-ff644/sites 
+[debug] [2022-04-11T05:02:35.545Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-ff644/sites 200
+[debug] [2022-04-11T05:02:35.545Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-ff644/sites {"sites":[{"name":"projects/1099469031576/sites/clone-ff644","defaultUrl":"https://clone-ff644.web.app","appId":"1:1099469031576:web:dc3234b262aaf9dc5168ed","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-11T05:02:35.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-ff644/webApps/1:1099469031576:web:dc3234b262aaf9dc5168ed/config [none]
+[debug] [2022-04-11T05:02:36.067Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-ff644/webApps/1:1099469031576:web:dc3234b262aaf9dc5168ed/config 200
+[debug] [2022-04-11T05:02:36.067Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-ff644/webApps/1:1099469031576:web:dc3234b262aaf9dc5168ed/config {"projectId":"clone-ff644","appId":"1:1099469031576:web:dc3234b262aaf9dc5168ed","storageBucket":"clone-ff644.appspot.com","apiKey":"AIzaSyC3WdDImusdvYjiEOksOK_WTtZRTD2gWnE","authDomain":"clone-ff644.firebaseapp.com","messagingSenderId":"1099469031576","measurementId":"G-KE0NGB18BJ"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-04-11T05:02:36.085Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-11T05:02:36.085Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-11T05:02:36.085Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\joshu\\.cache\\firebase\\emulators\\ui-v1.6.5\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\joshu\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.5\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-11T05:02:36.178Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\joshu\Desktop\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\joshu\\Desktop\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-04-11T05:02:36.346Z] Validating nodejs source
+[debug] [2022-04-11T05:02:38.473Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.216.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T05:02:38.474Z] Building nodejs source
+[debug] [2022-04-11T05:02:38.474Z] Analyzing nodejs backend spec
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-ff644/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-ff644/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-11T05:03:19.062Z] File C:\Users\joshu\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\joshu\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T05:03:20.063Z] Validating nodejs source
+[debug] [2022-04-11T05:03:22.178Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.216.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T05:03:22.178Z] Building nodejs source
+[debug] [2022-04-11T05:03:22.178Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T05:04:11.547Z] File C:\Users\joshu\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\joshu\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T05:04:12.548Z] Validating nodejs source
+[debug] [2022-04-11T05:04:14.318Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.216.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T05:04:14.318Z] Building nodejs source
+[debug] [2022-04-11T05:04:14.318Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T05:04:46.198Z] File C:\Users\joshu\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\joshu\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T05:04:47.199Z] Validating nodejs source
+[debug] [2022-04-11T05:04:48.961Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.216.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T05:04:48.961Z] Building nodejs source
+[debug] [2022-04-11T05:04:48.961Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T05:06:22.782Z] File C:\Users\joshu\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\joshu\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T05:06:23.783Z] Validating nodejs source
+[debug] [2022-04-11T05:06:25.577Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.216.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T05:06:25.577Z] Building nodejs source
+[debug] [2022-04-11T05:06:25.577Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T05:06:46.923Z] File C:\Users\joshu\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\joshu\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
