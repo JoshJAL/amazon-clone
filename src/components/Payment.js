@@ -7,18 +7,19 @@ import { Link, useNavigate } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 import { getCartTotal } from "../reducer";
 import axios from "axios";
+import { db } from "../firebase";
 
 function Payment() {
   const navigate = useNavigate();
-  
+
   const [{ cart, user }, dispatch] = useStateValue();
 
   const [succeeded, setSucceeded] = useState(false);
-  const [processing, setProcessing] = useState("");
+  const [processing, setProcessing] = useState(false);
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
 
-  const [clientSecret, setClientSecret] = useState(true);
+  const [clientSecret, setClientSecret] = useState("");
 
   const stripe = useStripe();
   const elements = useElements();
@@ -34,6 +35,8 @@ function Payment() {
     };
 
     getClientSecret();
+    // const { data: clientSecret } = async () => await axios.post("api/payment_intents", {
+    //   amount: getCartTotal(cart) * 100,
   }, [cart]);
 
   const handleSubmit = async (e) => {
@@ -50,9 +53,23 @@ function Payment() {
       .then(({ paymentIntent }) => {
         // paymentIntent = payment confirmation
 
+        db.collection("users")
+          .doc(user?.uid)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            cart: cart,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+
+        dispatch({
+          type: "EMPTY_CART",
+        });
 
         navigate.replace("/orders");
       });
